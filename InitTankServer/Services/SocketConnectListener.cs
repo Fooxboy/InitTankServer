@@ -57,7 +57,7 @@ namespace InitTankServer.Services
                     }
                     while (handler.Available > 0);
 
-                    _logger.Trace("Новое подключение...");
+                    _logger.Trace("Обнаружено новое подключение...");
 
                     var message = builder.ToString();
                     NewConnection?.Invoke(message, handler);
